@@ -1,0 +1,17 @@
+name: Deploy Development build to deta 
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: BogDAAAMN/deta-deploy-action@v1.0.1
+        with:
+          deta-access-token: ${{ secrets.DETA_TOKEN }}
+          deta-name: "development"
+          deta-project: "github-org-stats"
+          deta-project-dir: "app"
