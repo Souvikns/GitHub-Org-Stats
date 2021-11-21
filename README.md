@@ -1,9 +1,9 @@
-<div align="center">
+<p align="center">
 
-<img src="./logo.png" width="150" height="auto" /> 
+<img src="./logo.png" width="100px" height="auto" /> 
 
 <br>
-<h3>GitHub ORG Stats</h3>
+<h2 align="center">GitHub ORG Stats</h2>
 <h1 />
-</div>
+</p>
 
