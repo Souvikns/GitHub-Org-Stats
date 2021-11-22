@@ -14,4 +14,3 @@ jobs:
           deta-access-token: ${{ secrets.DETA_TOKEN }}
           deta-name: "development"
           deta-project: "github-org-stats"
-          deta-project-dir: "app"
