@@ -1,5 +1,3 @@
-"use strict"
-
 const GithubAPI = require('../api/github');
 
 const githubAPI = new GithubAPI('asyncapi');

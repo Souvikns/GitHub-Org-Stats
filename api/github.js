@@ -1,5 +1,3 @@
-"use strict" 
-
 const { Octokit } = require('octokit');
 
 class GithubAPI {
