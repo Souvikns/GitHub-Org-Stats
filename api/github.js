@@ -1,7 +1,5 @@
 const { Octokit } = require('octokit');
 
-module.exports = GithubAPI
-
 class GithubAPI {
     constructor(orgName) {
         this.org = orgName;
@@ -11,7 +9,9 @@ class GithubAPI {
     async repos(){
         const {data: repoList} = await this._octokit.request('GET /orgs/{org}/repos', {org: this.org});
         return {
-            count: repoList.length()
+            count: repoList.length
         }
     }
 }
+
+module.exports = GithubAPI
