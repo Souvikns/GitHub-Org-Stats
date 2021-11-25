@@ -1,6 +1,6 @@
-import express from 'express'
-import { JSDOM } from 'jsdom';
-import * as d3 from 'd3';
+const express = require('express');
+const {JSDOM} = require('jsdom');
+const d3 = require('d3');
 
 const app = express();
 
@@ -27,5 +27,4 @@ app.get('/dashboard', (req, res) => {
     res.send(body.html())
 });
 
-
-export default app
+module.exports = app
