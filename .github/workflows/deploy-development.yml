@@ -2,7 +2,7 @@ name: Deploy Development build to deta
 on:
   push:
     branches:
-      - development
+      - main 
 
 jobs:
   deploy:

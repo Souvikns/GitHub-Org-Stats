@@ -2,7 +2,7 @@ name: Deploy Production build to deta
 on:
   push:
     branches:
-      - main
+      - production
 
 
 jobs: 
