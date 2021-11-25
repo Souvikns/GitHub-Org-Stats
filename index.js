@@ -1,6 +1,8 @@
-import express from 'express'
-import { JSDOM } from 'jsdom';
-import * as d3 from 'd3';
+'use strict';
+
+const express = require('express');
+const {JSDOM} = require('jsdom');
+const d3 = require('d3');
 
 const app = express();
 
@@ -10,8 +12,8 @@ app.get('/', (req, res) => {
 
 app.get('/dashboard', (req, res) => {
     const dom = new JSDOM(`<!DOCTYPE html><body></body>`);
-    let body = d3.select(dom.window.document.querySelector("body"))
-    let svg = body.append('svg')
+    const body = d3.select(dom.window.document.querySelector("body"))
+    const svg = body.append('svg')
         .attr('width', 100)
         .attr('height', 100)
         .attr('xmlns', 'http://www.w3.org/2000/svg');
@@ -27,5 +29,4 @@ app.get('/dashboard', (req, res) => {
     res.send(body.html())
 });
 
-
-export default app
+module.exports = app
