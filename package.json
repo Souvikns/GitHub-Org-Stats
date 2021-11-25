@@ -4,7 +4,7 @@
   "description": "<p align=\"center\">",
   "main": "index.js",
   "scripts": {
-    "test": "jest .",
+    "test": "jest --coverage=true --coverageReporters=cobertura",
     "dev": "nodemon server.js"
   },
   "repository": {
